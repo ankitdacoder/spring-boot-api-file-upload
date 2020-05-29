@@ -1,0 +1,857 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assay>
+  <InstallRestrictions/>
+  <!--<InstallRestrictions>
+    <InstallBy>3/15/2011</InstallBy>
+    <InstalledOn>2/11/2011</InstalledOn>
+  </InstallRestrictions>-->
+  <ID>e1a9861f-87d1-4dfb-9889-a5254eb3f48a</ID>
+  <InsertNumber>06-01114</InsertNumber>
+  <ShortCode>AE</ShortCode>
+  <Name>IDEXX AE Ab</Name>
+  <DualWellMode>False</DualWellMode>
+  <ChemNames/>
+  <Category>Poultry</Category>
+  <Species>Chicken</Species>
+  <Type>Standard</Type>
+  <Layouts>
+    <Layout>Poultry Hz</Layout>
+    <Layout>Poultry Vt</Layout>
+  </Layouts>
+  <DefaultLayout>Poultry Hz</DefaultLayout>
+  <SampleFilter>650</SampleFilter>
+  <ReferenceFilter>0</ReferenceFilter>
+  <UnsupportedReports>
+    <UnsupportedReport>Johnes Management</UnsupportedReport>
+    <UnsupportedReport>Bovine Pregnancy</UnsupportedReport>
+  </UnsupportedReports>
+  <CaseType>Population</CaseType>
+  <Version>A</Version>
+  <DefaultGraphVariable>TiterGroup</DefaultGraphVariable>
+  <DefaultVariable>SP_Ratio</DefaultVariable>
+  <FloatingVariable>False</FloatingVariable>
+  <PlateValidityFormulae>
+    <PlateValidityFormula>
+      <Name>ValidPlate1</Name>
+      <Value>(PosCtlMean-NegCtlMean) &gt; 0.075</Value>
+    </PlateValidityFormula>
+    <PlateValidityFormula>
+      <Name>ValidPlate2</Name>
+      <Value>NegCtlMean &lt;= 0.150</Value>
+    </PlateValidityFormula>
+    <PlateValidityFormula>
+      <Name>ValidPlate</Name>
+      <Value>ValidPlate1 &amp;&amp; ValidPlate2</Value>
+    </PlateValidityFormula>
+  </PlateValidityFormulae>
+  <DisplayValidityFormulae>
+    <DisplayValidityFormula>PC - NC &gt; 0.075</DisplayValidityFormula>
+    <DisplayValidityFormula>NC &lt;= 0.150</DisplayValidityFormula>
+  </DisplayValidityFormulae>
+  <PlateValidityCorrectionFormulae>
+    <CorrectionFormula>
+    </CorrectionFormula>
+  </PlateValidityCorrectionFormulae>
+  <WellCalcs>
+    <WellCalc>
+      <Name>S</Name>
+      <Value>SampleMean - NegCtlMean</Value>
+    </WellCalc>
+    <WellCalc>
+      <Name>P</Name>
+      <Value>PosCtlMean - NegCtlMean</Value>
+    </WellCalc>
+    <WellCalc>
+      <Name>SP_Ratio</Name>
+      <Value>S/P</Value>
+    </WellCalc>
+  </WellCalcs>
+  <WellResultCalcs>
+    <WellResultCalc>
+      <Name>WellPositive</Name>
+      <Value>SP_Ratio &gt; 0.200</Value>
+    </WellResultCalc>
+    <WellResultCalc>
+      <Name>WellNegative</Name>
+      <Value>!WellPositive</Value>
+    </WellResultCalc>
+    <WellResultCalc>
+      <Name>WellSuspect</Name>
+      <Value>0</Value>
+    </WellResultCalc>
+  </WellResultCalcs>
+  <Variables>
+    <Variable>SP_Ratio</Variable>
+  </Variables>
+  <Bins>
+    <Bin>0.1</Bin>
+    <Bin>0.2</Bin>
+    <Bin>0.3</Bin>
+    <Bin>0.4</Bin>
+    <Bin>0.5</Bin>
+    <Bin>0.6</Bin>
+    <Bin>0.7</Bin>
+    <Bin>0.8</Bin>
+    <Bin>0.9</Bin>
+    <Bin>1.0</Bin>
+    <Bin>1.1</Bin>
+    <Bin>1.2</Bin>
+    <Bin>1.3</Bin>
+    <Bin>1.4</Bin>
+    <Bin>1.5</Bin>
+    <Bin>1.6</Bin>
+  </Bins>
+  <TiterConfiguration>
+    <Base>SP_Ratio</Base>
+    <Type>Standard</Type>
+    <Slope>1.09</Slope>
+    <Intercept>3.36</Intercept>
+    <Titers>
+      <Titer>397</Titer>
+      <Titer>1000</Titer>
+      <Titer>2000</Titer>
+      <Titer>3000</Titer>
+      <Titer>4000</Titer>
+      <Titer>5000</Titer>
+      <Titer>6000</Titer>
+      <Titer>8000</Titer>
+      <Titer>10000</Titer>
+      <Titer>12000</Titer>
+      <Titer>14000</Titer>
+      <Titer>16000</Titer>
+      <Titer>18000</Titer>
+      <Titer>20000</Titer>
+      <Titer>22000</Titer>
+      <Titer>24000</Titer>
+      <Titer>28000</Titer>
+      <Titer>32000</Titer>
+    </Titers>
+  </TiterConfiguration>
+  <DisplayVariables>
+    <WellType>
+      <Names>
+        <ShortNameStringID>
+          667  <!--Well-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          568  <!--Well Type-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            Yes
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            Yes
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </WellType>
+    
+    <OpticalDensity>
+      <Names>
+        <ShortNameStringID>
+          668  <!--O.D.-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          569  <!--Optical Density-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            Yes
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            Yes
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </OpticalDensity>
+    
+    <TubeNumber>
+      <Names>
+        <ShortNameStringID>
+          264  <!--Tube-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          570  <!--Tube Number-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </TubeNumber>
+
+    <Sex>
+      <Names>
+        <ShortNameStringID>
+          571  <!--Sex-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          571  <!--Sex-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </Sex>
+
+    <Species>
+      <Names>
+        <ShortNameStringID>
+          150  <!--Species-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          150  <!--Species-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </Species>
+
+    <Breed1>
+      <Names>
+        <ShortNameStringID>
+          429  <!--Breed 1-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          429  <!--Breed 1-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </Breed1>
+
+    <Breed2>
+      <Names>
+        <ShortNameStringID>
+          430  <!--Breed 2-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          430  <!--Breed 2-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </Breed2>
+
+    <AnimalType>
+      <Names>
+        <ShortNameStringID>
+          96  <!--Type-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          407  <!--Animal Type-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </AnimalType>
+   
+    <AnimalID1>
+      <Names>
+        <ShortNameStringID>
+          575 <!--Animal ID1-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          575  <!--Animal ID1-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </AnimalID1>
+
+    <AnimalID2>
+      <Names>
+        <ShortNameStringID>
+          576  <!--Animal ID2-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          576  <!--Animal ID2-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </AnimalID2>
+
+    <CalendarAge>
+      <Names>
+        <ShortNameStringID>
+          792  <!--C Age-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          476  <!--Calendar Age-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </CalendarAge>
+
+    <BreedingAge>
+      <Names>
+        <ShortNameStringID>
+          793  <!--B Age-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          578  <!--Breeding Age-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </BreedingAge>
+
+    <Quality>
+      <Names>
+        <ShortNameStringID>
+          579  <!--Quality-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          579  <!--Quality-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </Quality>
+
+    <SampleMean>
+      <Names>
+        <ShortNameStringID>
+          97  <!--Mean-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          778  <!--Sample Mean-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </SampleMean>
+
+    <Variable>
+      <Names>
+        <ShortNameStringID>
+          610  <!--S/P-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          669  <!--S/P Ratio-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            Yes
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            Yes
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </Variable>
+
+    <Titer>
+      <Names>
+        <ShortNameStringID>
+          495  <!--Titer-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          495  <!--Titer-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            Yes
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            Yes
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </Titer>
+
+    <TiterGroup>
+      <Names>
+        <ShortNameStringID>
+          673  <!--Group-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          670  <!--Titer Group-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            Yes
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            Yes
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </TiterGroup>
+
+    <TiterLog2>
+      <Names>
+        <ShortNameStringID>
+          611  <!--Log2-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          672  <!--Titer Log2-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </TiterLog2>
+
+    <Result>
+      <Names>
+        <ShortNameStringID>
+          671  <!--Result-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          671  <!--Result-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            Yes
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            Yes
+          </Available>
+          <SelectedByDefault>
+            Yes
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </Result>
+
+    <DaysPostBred>
+      <Names>
+        <ShortNameStringID>
+          716  <!--DaysPostBred-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          716  <!--Days Post Bred-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </DaysPostBred>
+
+    <ExpectedCalvingDate>
+      <Names>
+        <ShortNameStringID>
+          717  <!--ExpectedCalvingDate-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          717  <!--ExpectedCalvingDate-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </ExpectedCalvingDate>
+
+    <LactationNumber>
+      <Names>
+        <ShortNameStringID>
+          718  <!--LactationNumber-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          718  <!--Lactation Number-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </LactationNumber>
+
+    <NoOfTimesBred>
+      <Names>
+        <ShortNameStringID>
+          719  <!--NoofTimesBred-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          719  <!--NoofTimesBred-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </NoOfTimesBred>
+
+    <ServiceType>
+      <Names>
+        <ShortNameStringID>
+          794  <!--ServiceType-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          794  <!--ServiceType-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </ServiceType>
+
+    <DaysInMilk>
+      <Names>
+        <ShortNameStringID>
+          721  <!--DaysInMilk-->
+        </ShortNameStringID>
+        <LongNameStringID>
+          721  <!--Days in Milk-->
+        </LongNameStringID>
+      </Names>
+      <ResultsViewAvailability>
+        <PlateView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </PlateView>
+        <CaseView>
+          <Available>
+            No
+          </Available>
+          <SelectedByDefault>
+            No
+          </SelectedByDefault>
+        </CaseView>
+      </ResultsViewAvailability>
+    </DaysInMilk>
+    
+  </DisplayVariables>
+</Assay>
